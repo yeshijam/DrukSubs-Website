@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="DrukSubs helps customers in Bhutan request selected digital subscriptions with a simple, personal ordering process.">
+  <title>DrukSubs — Your Digital World, Made Accessible</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="DrukSubs home">
+      <img src="assets/logo.png" alt="DrukSubs logo">
+      <span>Druk<span class="brand-accent">Subs</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#subscriptions">Subscriptions</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#about">About us</a>
+      <a href="#contact">Contact</a>
+      <a class="button button-small" href="#subscriptions">Order now <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> DIGITAL SUBSCRIPTIONS, SIMPLIFIED</p>
+        <h1>Your digital world,<br><span>made accessible.</span></h1>
+        <p class="hero-description">Get your favourite digital subscriptions and AI tools with DrukSubs. A simple ordering process and friendly support, made with customers in Bhutan in mind.</p>
+        <div class="hero-actions">
+          <a class="button" href="#subscriptions">Explore subscriptions <span aria-hidden="true">↘</span></a>
+          <a class="button button-quiet" href="#contact">Contact us <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✓</span><span>Simple requests <i></i> Personal support <i></i> Clear confirmation</span></div>
+      </div>
+      <div class="hero-art" aria-label="Digital services preview">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-glow"></div>
+        <div class="floating-card card-spotify"><span class="service-mark spotify-mark">≋</span><div><b>Spotify Premium</b><small>Music for every mood</small></div><span class="card-arrow">↗</span></div>
+        <div class="floating-card card-netflix"><span class="service-mark netflix-mark">N</span><div><b>Netflix</b><small>Stories worth staying in for</small></div><span class="card-arrow">↗</span></div>
+        <div class="floating-card card-gemini"><span class="service-mark gemini-mark">✦</span><div><b>Google Gemini</b><small>Your AI assistant</small></div><span class="card-arrow">↗</span></div>
+        <div class="hero-center"><img src="assets/logo.png" alt=""><span>YOUR NEXT CLICK<br>STARTS HERE</span></div>
+        <span class="art-caption">ONE PLACE. MORE POSSIBILITIES.</span>
+      </div>
+      <div class="hero-bottom"><span>BUILT FOR BHUTAN</span><span class="hero-bottom-line"></span><span>EXPLORE WHAT YOU LOVE</span></div>
+    </section>
+
+    <section class="subscriptions section-wrap" id="subscriptions">
+      <div class="section-heading">
+        <div><p class="eyebrow">PICK YOUR NEXT FAVOURITE</p><h2>Subscriptions for <span>your world.</span></h2></div>
+        <p class="section-intro">Choose a service to get started. We’ll confirm current availability, plan details, and the final price before your order is accepted.</p>
+      </div>
+      <div class="product-toolbar">
+        <div class="filter-pills" role="group" aria-label="Filter subscriptions">
+          <button class="filter-pill active" data-filter="all">All services <span>03</span></button>
+          <button class="filter-pill" data-filter="entertainment">Entertainment</button>
+          <button class="filter-pill" data-filter="ai">AI tools</button>
+        </div>
+        <span class="availability-note"><span class="live-dot"></span> Requests currently handled manually</span>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="entertainment">
+          <div class="product-visual visual-spotify">
+            <span class="product-label">MUSIC</span>
+            <div class="app-icon spotify-icon"><span>≋</span></div>
+            <span class="visual-orbit"></span>
+          </div>
+          <div class="product-content">
+            <div class="product-title-row"><h3>Spotify Premium</h3><span class="product-index">01</span></div>
+            <p>Listen to the music you love, with a premium listening experience.</p>
+            <div class="product-meta"><span>Plan &amp; duration</span><b>Confirm with us</b></div>
+            <div class="product-price"><span>Price</span><strong>Nu. <em>To be confirmed</em></strong></div>
+            <button class="button product-order" data-product="Spotify Premium">Request subscription <span>↗</span></button>
+          </div>
+        </article>
+        <article class="product-card featured" data-category="entertainment">
+          <div class="product-visual visual-netflix">
+            <span class="product-label">MOVIES &amp; SERIES</span>
+            <div class="app-icon netflix-icon">N</div>
+            <span class="netflix-light"></span>
+          </div>
+          <div class="product-content">
+            <div class="product-title-row"><h3>Netflix</h3><span class="product-index">02</span></div>
+            <p>Explore films, series, and stories for your next watchlist.</p>
+            <div class="product-meta"><span>Plan &amp; duration</span><b>Confirm with us</b></div>
+            <div class="product-price"><span>Price</span><strong>Nu. <em>To be confirmed</em></strong></div>
+            <button class="button product-order" data-product="Netflix">Request subscription <span>↗</span></button>
+          </div>
+        </article>
+        <article class="product-card" data-category="ai">
+          <div class="product-visual visual-gemini">
+            <span class="product-label">AI TOOL</span>
+            <div class="app-icon gemini-icon">✦</div>
+            <span class="gemini-ring ring-one"></span><span class="gemini-ring ring-two"></span>
+          </div>
+          <div class="product-content">
+            <div class="product-title-row"><h3>Google Gemini</h3><span class="product-index">03</span></div>
+            <p>Get help brainstorming, learning, writing, and exploring ideas.</p>
+            <div class="product-meta"><span>Plan &amp; duration</span><b>Confirm with us</b></div>
+            <div class="product-price"><span>Price</span><strong>Nu. <em>To be confirmed</em></strong></div>
+            <button class="button product-order" data-product="Google Gemini">Request subscription <span>↗</span></button>
+          </div>
+        </article>
+      </div>
+      <p class="fine-print">Product names and logos belong to their respective owners. DrukSubs is an independent service and does not claim official affiliation with these providers. All requests are subject to availability and provider terms.</p>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">THREE SIMPLE STEPS</p><h2>From request to <span>ready.</span></h2></div>
+          <p class="section-intro">No complicated checkout. Tell us what you need and we’ll guide you through the next steps.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Choose a service</h3><p>Browse our available subscriptions and pick the service you want.</p><span class="step-line"></span></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-icon">↗</div><h3>Place your request</h3><p>Send us your name and preferred contact details along with your choice.</p><span class="step-line"></span></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-icon">✓</div><h3>Confirm the details</h3><p>We’ll contact you to confirm availability, pricing, payment, and delivery.</p><span class="step-line"></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section section-wrap">
+      <div class="why-visual">
+        <div class="why-big-type">LESS<br><span>HASSLE.</span><br>MORE<br><span>YOU.</span></div>
+        <div class="why-stamp">DRUKSUBS<br><span>BHUTAN</span></div>
+        <div class="why-orb"></div>
+      </div>
+      <div class="why-copy">
+        <p class="eyebrow">WHY DRUKSUBS</p>
+        <h2>Your digital essentials,<br><span>made simpler.</span></h2>
+        <p class="why-description">We’re building a straightforward way for customers in Bhutan to request selected digital subscriptions without the guesswork.</p>
+        <div class="benefit-list">
+          <div><span>01</span><p><b>Convenient requests</b><small>Start an order online from wherever you are.</small></p><span class="benefit-check">↗</span></div>
+          <div><span>02</span><p><b>Clear confirmation</b><small>Check plan, price, and availability before proceeding.</small></p><span class="benefit-check">↗</span></div>
+          <div><span>03</span><p><b>Personal support</b><small>Speak with us directly if you have questions.</small></p><span class="benefit-check">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section-wrap about-inner">
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+        <h2>Good services.<br>Less friction.</h2>
+        <div class="about-bottom"><p>DrukSubs is a small digital subscription service focused on helping customers in Bhutan conveniently request selected digital products, entertainment subscriptions, and AI tools.</p><a class="text-link" href="#contact">Let’s talk <span>↗</span></a></div>
+        <div class="about-decoration">འབྲུག <span>DRUKSUBS</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">LET’S GET YOU CONNECTED</p>
+        <h2>What are you<br><span>looking for?</span></h2>
+        <p>Tell us what you need. We’ll get back to you to discuss availability, pricing, and the next steps.</p>
+        <div class="contact-direct">
+          <div class="contact-direct-icon">↗</div>
+          <div><small>Prefer to message us?</small><b>Chat with DrukSubs</b><span>WhatsApp contact number to be added</span></div>
+        </div>
+        <button class="button button-light" id="whatsappContact">Contact on WhatsApp <span>↗</span></button>
+        <p class="contact-email">Email: <a href="mailto:hello@druksubs.example">hello@druksubs.example</a> <small>(placeholder — update before launch)</small></p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-top"><span>CONTACT FORM</span><span>01 / 01</span></div>
+        <h3>Send an enquiry</h3>
+        <p>Fields marked * are required.</p>
+        <label for="customerName">Your name *</label>
+        <input id="customerName" name="name" type="text" placeholder="Enter your name" required maxlength="100">
+        <label for="customerContact">Phone or email *</label>
+        <input id="customerContact" name="contact" type="text" placeholder="How can we reach you?" required maxlength="120">
+        <label for="customerService">What are you interested in?</label>
+        <select id="customerService" name="service">
+          <option value="">Choose a service</option>
+          <option>Spotify Premium</option><option>Netflix</option><option>Google Gemini</option><option>Game top-up / Other</option>
+        </select>
+        <label for="customerMessage">Your message *</label>
+        <textarea id="customerMessage" name="message" placeholder="Tell us what you need..." rows="4" required maxlength="1200"></textarea>
+        <button class="button form-submit" type="submit">Prepare enquiry <span>↗</span></button>
+        <p class="form-note">This demo prepares an enquiry message. It does not send or store your information. Configure WhatsApp or a form backend before launch.</p>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-wrap">
+      <div class="footer-brand-col"><a class="brand footer-brand" href="#home"><img src="assets/logo.png" alt=""><span>Druk<span class="brand-accent">Subs</span></span></a><p>Your digital world, made accessible. A simple way to request digital subscriptions in Bhutan.</p><span class="footer-location">MADE FOR BHUTAN <span>✳</span></span></div>
+      <div class="footer-links"><b>Explore</b><a href="#subscriptions">Subscriptions</a><a href="#how-it-works">How it works</a><a href="#about">About us</a><a href="#contact">Contact</a></div>
+      <div class="footer-links"><b>Support</b><a href="#contact">Contact support</a><a href="#policies">Terms &amp; conditions</a><a href="#policies">Privacy policy</a><a href="#policies">Refund policy</a></div>
+      <div class="footer-news"><b>Have something in mind?</b><p>Need a service that isn’t listed? Send us an enquiry.</p><a class="footer-cta" href="#contact">Ask DrukSubs <span>↗</span></a></div>
+    </div>
+    <div class="footer-bottom section-wrap" id="policies"><span>© <span id="year"></span> DrukSubs. All rights reserved.</span><span class="policy-note">Policy links are placeholders and must be reviewed before launch.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <dialog class="order-dialog" id="orderDialog" aria-labelledby="orderTitle">
+    <form id="orderForm" class="order-form">
+      <button type="button" class="dialog-close" id="closeDialog" aria-label="Close order form">×</button>
+      <p class="eyebrow">YOUR REQUEST</p><h2 id="orderTitle">Let’s get started.</h2>
+      <p class="dialog-intro">Add your contact details. We’ll prepare a message you can send to DrukSubs to confirm the order.</p>
+      <label for="orderProduct">Selected service</label><input id="orderProduct" name="product" readonly>
+      <label for="orderPlan">Plan or duration (optional)</label><input id="orderPlan" name="plan" placeholder="e.g. preferred plan or duration" maxlength="100">
+      <label for="orderName">Your name *</label><input id="orderName" name="name" placeholder="Enter your name" required maxlength="100">
+      <label for="orderContact">Phone or email *</label><input id="orderContact" name="contact" placeholder="How can we reach you?" required maxlength="120">
+      <label for="orderNotes">Additional details (optional)</label><textarea id="orderNotes" name="notes" rows="3" placeholder="Any questions or requests?" maxlength="600"></textarea>
+      <p class="form-note">Your order is only a request. It is not confirmed until DrukSubs verifies availability, price, and details. Never share passwords or one-time codes.</p>
+      <button class="button form-submit" type="submit">Continue to WhatsApp <span>↗</span></button>
+      <div class="form-status" id="orderStatus" role="status" aria-live="polite"></div>
+    </form>
+  </dialog>
+</body>
+</html>
